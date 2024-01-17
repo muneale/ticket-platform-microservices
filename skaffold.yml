@@ -9,6 +9,22 @@ build:
           - src: src/**/*.ts
             dest: .
       docker:
+        dockerfile: Dockerfile.dev
+    # - image: haziness8921/client
+    #   context: client
+    #   sync:
+    #     manual:
+    #       - src: src/**/*.ts*
+    #         dest: .
+    #   docker:
+    #     dockerfile: Dockerfile.dev
+    - image: haziness8921/client
+      context: client
+      sync:
+        manual:
+          - src: '**/*.js'
+            dest: .
+      docker:
         dockerfile: Dockerfile
   local:
     push: false

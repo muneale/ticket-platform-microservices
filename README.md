@@ -14,3 +14,10 @@
 ### Helm
 - `helm upgrade --install ingress-nginx ingress-nginx --repo https://kubernetes.github.io/ingress-nginx --namespace ingress-nginx --create-namespace` to run ingress-nginx service.
 - `helm uninstall ingress-nginx --namespace ingress-nginx` to remove ingress-nginx service.
+
+## Chrome
+- If you get the "Connection not secure" error you can bypass it by clicking anywhere in Chrome window where you see the error, and type `thisisunsafe`.
+
+## NextJS
+- [How to use "use server" with NextJS 14](https://www.youtube.com/watch?v=5MRLO-7O2So)
+- [Useful ORM called Prisma](https://www.prisma.io/)
