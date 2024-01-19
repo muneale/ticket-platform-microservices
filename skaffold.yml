@@ -10,6 +10,14 @@ build:
             dest: .
       docker:
         dockerfile: Dockerfile.dev
+    - image: haziness8921/tickets
+      context: tickets
+      sync:
+        manual:
+          - src: src/**/*.ts
+            dest: .
+      docker:
+        dockerfile: Dockerfile.dev
     # - image: haziness8921/client
     #   context: client
     #   sync:
