@@ -10,6 +10,7 @@
 - `kubectl apply | delete -f path/to/k8s-files/*.yml` to apply or delete pods, services or deployments.
 - `kubectl rollout restart | history | undo deployment <deployment_id_1> <deployment_id_2> ...` start, checks the history and undo the deployment of a new version (downloading the new docker image ecc.).
 - `kubectl logs <pod_id>` to get the logs.
+- `kubectl port-forward <pod-name> <local-port>:<pod-port>` to port-forward the service to the localhost through a simple command (intead of a NodePort K8S service).
 
 ### Helm
 - `helm upgrade --install ingress-nginx ingress-nginx --repo https://kubernetes.github.io/ingress-nginx --namespace ingress-nginx --create-namespace` to run ingress-nginx service.
